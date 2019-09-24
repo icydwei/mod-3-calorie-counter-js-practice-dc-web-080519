@@ -89,9 +89,6 @@ function handleCalListClicks(e) {
 }
 
 function deleteCalEntry(e) {
-  let li = e.target.parentElement.parentElement.parentElement
-  // let cal = e.target.parentElement.parentElement.parentElement.children[0].children[0].innerText.split(" ")[0]
-  // let note = e.target.parentElement.parentElement.parentElement.children[0].children[1].innerText
   let delId = e.target.parentElement.parentElement.parentElement.children[0].id.split("-")[1]
 
   fetch(URL + '/' + delId, {
